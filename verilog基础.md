@@ -1,4 +1,14 @@
-verilog模块结构
+#### 学习FPGA先要掌握编程语言基础
+
+用的是HDL (Hardware Description Language) 
+
+###### 两种语言
+
+- verilog
+
+- VHDL
+
+##### verilog模块结构
 
 ~~~verilog
 module MUX21a(a,b,s,y); # module 模块名 端口列表
@@ -83,7 +93,7 @@ y={4{2'b01}};         结果是01010101
 
 
 
-语句块
+##### 语句块
 
 always
 
@@ -142,7 +152,7 @@ end  # 多条语句并行执行
 
 
 
-底层模块
+##### 底层模块
 
 ~~~verilog
 端口映射
@@ -153,7 +163,7 @@ DFF dff1(.CLK(clk),D(d),Q(q));
 DFF dff(a,b,c);
 ~~~
 
-门原语
+##### 门原语
 
 ~~~
 and or xor(异或) nand(与非) nor(或非) xnor(同或)
@@ -164,7 +174,7 @@ and(out,in1,in2)
 
 
 
-数据类型
+##### 数据类型
 
 net类    wire
 
@@ -172,7 +182,7 @@ variable类  reg
 
 
 
-数字
+##### 数字
 
 <位宽>‘ <进制><数字>
 
@@ -186,7 +196,7 @@ variable类  reg
 
 
 
-逻辑值
+###### 逻辑值
 
 ~~~
 1
@@ -200,12 +210,5 @@ z  高阻态
 if 判断语句 和编程语言类似
 
 case 和switch类似
-
-
-
-
-
-
-
 
 
